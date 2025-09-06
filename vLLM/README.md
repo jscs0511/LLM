@@ -1,9 +1,3 @@
-## vLLM
-Using paged attention, it achieved significantly improved throughput through memory efficiency, resulting in higher processing performance.  
-By utilizing continuous batching, it enables batch processing of user requests and achieves high GPU utilization.
-**However, only one inference model can be used at a time,** and switching to a different model after creating an instance requires destroying the current instance each time, which is a drawback.
-
-
 ## Why vLLM?
 When using LLMs in real products, inference efficiency is key to speed and cost. Larger models(more parameters) are slower and more expensive, but various optimization techniques are continuously being developed to address these challenges. vLLM efficiently manages GPU memory, supports multiple models via Hugging Face, and is optimized for handling many concurrent requests.  
 
