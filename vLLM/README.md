@@ -11,7 +11,10 @@ Cons: Latency from GPU-CPU page swapping. If needed KV cache isn’t on the GPU,
 In vLLM, 'gpu_memory_utilization' parameter mainly controls the amount of KV cache stored on the GPU. Adjusting it balances GPU memory use and CPU offloading, optimizing memory management and performance.  
 
 ## Continous Batching
-It enables batch processing of user requests and achieves high GPU utilization throuhg GPU parallel processing.
+User requests are dynamically managed, based on individual generation steps.
+If any request finishes early during GPU processing (When an EOS token is generated),
+the resources allocated to that request are immediately released and reused to process a new waiting request in the next generation step.  
+GPU operates almost continuously without idle time, significantly improving throughput. Resources are quickly released and reallocated, maximizing GPU utilization efficiency.
 
 ## Drawback
 Only one inference model can be used at a time,** and switching to a different model after creating an instance requires destroying the current instance each time.  
