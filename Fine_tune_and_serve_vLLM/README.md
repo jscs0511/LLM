@@ -12,6 +12,5 @@ The final model becomes both instruction- and DPO-tuned.
 <img width="759" height="274" alt="image" src="https://github.com/user-attachments/assets/5853f498-6c01-437b-8dd3-b865ab937c3b" />
 
 ## Part 3: Served the trained models in Part 2 through vLLM  
-The QLoRA adapter 'dpo_output_2_cpk_40' was trained to generate short and concise answers. The following output reflects this trend.  
-<img width="808" height="445" alt="image" src="https://github.com/user-attachments/assets/43496c7a-b041-458d-a89f-8301bb9e8623" />
+The QLoRA adapter 'dpo_output_2_cpk_40' was trained to generate short and concise answers. The following output reflects this trend.  ( Updating.. )
 
