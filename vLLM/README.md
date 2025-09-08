@@ -17,5 +17,5 @@ the resources allocated to that request are immediately released and reused to p
 GPU operates almost continuously without idle time, significantly improving throughput. Resources are quickly released and reallocated, maximizing GPU utilization efficiency.
 
 ## Drawback
-Only one inference model can be used at a time,** and switching to a different model after creating an instance requires destroying the current instance each time.  
+**Only one inference model can be used at a time,** and switching to a different model after creating an instance requires destroying the current instance each time.  
 
